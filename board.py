@@ -1,11 +1,11 @@
 from box import Box
 
 class Board(object):
-    def __init__(self, board_size):
+    def __init__(self, size):
         self.board = []
-        for row in range(board_size):
+        for row in range(size):
             row = []
-            for column in range(board_size):
+            for column in range(size):
                 box = Box()
                 row.append(box)
             self.board.append(row)
