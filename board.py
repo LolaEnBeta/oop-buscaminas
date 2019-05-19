@@ -17,7 +17,7 @@ class Board(object):
             row = random.randint(0, self.size - 1)
             column = random.randint(0, self.size - 1)
             box = self.board[row][column]
-            if box.value == -1: #box has already a bomb
+            if box.has_bomb():
                 continue
             box.value = -1
             mines -= 1
